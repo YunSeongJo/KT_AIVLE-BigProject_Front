@@ -1,0 +1,56 @@
+/* Header Area */
+header {
+    font-size: var(--font-size-4);
+    display: flex;
+    justify-content: center;
+
+}
+
+.headerInner {
+    display:flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: var(--padding-3) var(--container-padding);
+}
+
+.headerInner div{
+    margin: auto 0px;
+}
+.headerInner a{
+    margin: auto 0px;
+    text-decoration-line: none;
+    
+    /* Logo Area */
+    .logo {
+        display: flex;
+        color: var(--clr-highlight);
+    }
+
+    .logo div {
+        margin: auto 0px;
+        font-size: var(--font-size-4);
+    }
+}
+
+
+
+
+/* Nation Area */
+.headerInner .nation {
+    background-color: var(--clr-background);
+    display: flex;
+    gap: 0.3rem;
+    font-size: var(--font-size-2);
+    padding: var(--padding-1) var(--padding-3);
+    align-items: center;
+    border-radius: var(--border-radius-3);
+}
+
+.headerInner .nation select {
+    border-style: none;
+    background-color: transparent;
+
+    &:focus{
+        outline: none;
+    }
+}

@@ -1,0 +1,74 @@
+.news-head{
+    display: flex;
+    justify-content: space-between;
+    gap: var(--component-gap);
+    align-items: center;
+
+    padding: var(--padding-3);
+    font-size: var(--font-size-1);
+    color: var(--clr-gray);
+    text-align: center;
+
+    .detail-title {
+        flex: 20;
+        font-size: var(--font-size-3);
+        font-weight: 700;
+        color: var(--clr-dark);
+        text-align: left;
+    }
+    .detail-time {
+        flex: 3;
+    }
+    .detail-agency {
+        flex: 2;
+    }
+}
+
+.news-detail {
+    .box {
+        background-color: white;
+        padding: 10px;
+        margin-top: 16px;
+        margin-bottom: 16px;
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 1.5rem;
+    }
+
+    p {
+        height: 20rem;
+    }
+    h3 {
+        text-align: right;
+        font-size: 1rem;
+    }
+    
+}
+
+.news-content {
+    padding: var(--padding-2);
+    font-size: var(--font-size-2);
+    line-height: 1.6;
+    height: 30rm;
+    max-height: 60vh; 
+    background-color: #f9f9f9; // Light background color for better readability
+    margin-top: var(--margin-2);
+    margin-bottom: var(--margin-2);
+    overflow: scroll;
+    overflow-x: hidden;
+    &::-webkit-scrollbar {
+        width: 0; // 스크롤바 막대 제거
+        height: 0; // 가로 스크롤바 막대 제거
+    }
+    padding: var(--padding-1) var(--padding-3);
+
+  }
+
+.news-image {
+    width: 22rem; // 이미지 너비 증가
+    height: 15rem; // 이미지 높이 자동 조정
+    margin: 1rem auto; // 이미지와 텍스트 사이 간격 및 가운데 정렬
+    display: block; // 가운데 정렬을 위한 블록 요소
+}

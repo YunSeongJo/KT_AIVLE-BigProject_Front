@@ -1,0 +1,45 @@
+.col {
+    height: 3rem;
+    border-bottom: 0.5px solid var(--clr-gray);
+    margin: auto;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+
+    &:hover {
+        background-color: var(--clr-lightgray);
+    }
+}
+
+.col .headline {
+    width: -webkit-fill-available;
+    overflow: hidden;
+    height: 1.2rem;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: var(--font-size-2);
+}
+
+.col .no {
+    font-size: var(--font-size-1);
+    color: var(--clr-dark);
+    width: 3rem;
+    text-align: center;
+}
+
+.col .views {
+    font-size: var(--font-size-2);
+    color: var(--clr-dark);
+}
+
+.table .detail {
+    min-height: 10rem;
+    margin: 0.3rem;
+    max-height: max-content;
+    padding: var(--card-padding);
+    background-color: var(--clr-lightgray);
+    border-radius: var(--border-radius-1);
+    white-space: break-spaces;
+    font-size: var(--font-size-2);
+}

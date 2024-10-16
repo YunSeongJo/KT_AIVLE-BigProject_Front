@@ -1,0 +1,30 @@
+
+.box {
+    
+    height: -webkit-fill-available;
+    margin: 0.5rem;
+    padding: var(--card-padding);
+    border-radius: var(--border-radius-3);
+}
+
+.basic{
+    background-color: var(--clr-background);
+}
+
+.box.large {
+    width: -webkit-fill-available;
+}
+
+.box.medium {
+    width: 35%;
+}
+
+.box.small {
+    width: 25%;
+    padding: var(--padding-1);
+}
+
+.bg {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(255, 255, 255, 1)), url(../../../public/glawbal.png);
+    background-size: cover;
+}
